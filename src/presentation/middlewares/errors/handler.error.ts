@@ -62,7 +62,7 @@ export class ErrorsMiddleware {
     }
     // En caso de que la ruta que se solicita no exista se envía el siguiente HTML5
     public static routeErrors(err: unknown, req: Request, res: Response, next: NextFunction) {
-        const filePath = path.join(__dirname, '../../../../public/segurity/404.html')
+        const filePath = path.join(__dirname, '../../../../public/security/404.html')
         return res.status(404).sendFile(filePath);
     }
 }
