@@ -7,6 +7,9 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
+# Contenedores
+postgres_data/
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -76,6 +79,7 @@ web_modules/
 .env
 .env.development.local
 .env.test.local
+.env.test
 .env.production.local
 .env.local
 
