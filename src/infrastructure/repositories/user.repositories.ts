@@ -33,7 +33,8 @@ export class AuthRepository implements IUserRepository {
             email: userDto.email, 
             password: userDto.password, 
             createdAt: new Date(), 
-            updatedAt: new Date
+            updatedAt: new Date,
+            
         }
   });
     if (!user) {

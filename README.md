@@ -50,7 +50,7 @@ node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 
 ### Requisitos previos
 
-- Tener instalado [Node.js](https://nodejs.org/) (preferentemente la versión 18.17.1).
+- Tener instalado [Node.js](https://nodejs.org/) (preferentemente la versión 22.12.0).
 - Tener instalado [Docker](https://www.docker.com/get-started).
 - Tener instalado [Docker Compose](https://docs.docker.com/compose/install/).
 
@@ -72,11 +72,15 @@ npm install
 ```bash
 docker-compose up -d
 ```
-6. Ejecutar proyecto en modo desarrollo
+6. Correr migración con prisma 
+```bash
+npx prisma migrate dev
+```
+7. Ejecutar proyecto en modo desarrollo
 ```bash
 npm run dev
 ```
-7. Crear la carpeta postgres_data en la raiz del proyecto para el manejo del volumen en docker-compose
+8. Crear la carpeta postgres_data en la raiz del proyecto para el manejo del volumen en docker-compose
 ```bash
 mkdir postgres_data
 ```
